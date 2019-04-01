@@ -1,0 +1,35 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:12:30
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  E504                       3      ASL.B #$02,D4
+00004002                             4  
+00004002  E1D1                       5      ASL (A1)
+00004004  E1E1                       6      ASL -(A1)
+00004006  E1D9                       7      ASL (A1)+
+00004008  E1F8 4002                  8      ASL $4002
+0000400C  E1F8 4002                  9      ASL $00004002
+00004010  E1F9 00009000             10      ASL $9000
+00004016  E1F9 00009000             11      ASL $00009000
+0000401C  E544                      12      ASL.W #$02,D4
+0000401E  E544                      13      ASL.W #$0002,D4
+00004020                            14  
+00004020  E584                      15      ASL.L #$02,D4
+00004022  E584                      16      ASL.L #$0002,D4
+00004024  E584                      17      ASL.L #$00000002,D4
+00004026                            18  
+00004026  E724                      19      ASL.B D3,D4
+00004028  E764                      20      ASL.W D3,D4
+0000402A  E7A4                      21      ASL.L D3,D4
+0000402C                            22  
+0000402C                            23      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

@@ -1,0 +1,41 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:40:35
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  E7F8 3112                  3      ROL   $3112
+00004004  E7F8 5612                  4      ROL   $5612
+00004008  E7F8 7812                  5      ROL   $7812
+0000400C  E7F9 00083112              6      ROL   $83112
+00004012  E51C                       7      ROL.B #$02,D4
+00004014                             8  
+00004014  E7D1                       9      ROL.W (A1)
+00004016  E7E1                      10      ROL.W -(A1)
+00004018  E7D9                      11      ROL.W (A1)+
+0000401A  E7F8 4002                 12      ROL.W $4002
+0000401E  E7F8 4002                 13      ROL.W $00004002
+00004022  E7F9 00009000             14      ROL.W $9000
+00004028  E7F9 00009000             15      ROL.W $00009000
+0000402E  E55C                      16      ROL.W #$02,D4
+00004030  E55C                      17      ROL.W #$0002,D4
+00004032                            18  
+00004032  E59C                      19      ROL.L #$02,D4
+00004034  E59C                      20      ROL.L #$0002,D4
+00004036  E59C                      21      ROL.L #$00000002,D4
+00004038                            22  
+00004038  E73C                      23      ROL.B D3,D4
+0000403A  E77C                      24      ROL.W D3,D4
+0000403C  E7BC                      25      ROL.L D3,D4
+0000403E                            26  
+0000403E  E7F8 3112                 27      ROL   $3112
+00004042                            28  
+00004042                            29      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

@@ -1,0 +1,21 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:24:51
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  4E93                       3      JSR (A3)
+00004002  4EB8 4002                  4      JSR $4002
+00004006  4EB8 4000                  5      JSR $00004000
+0000400A  4EB9 00009000              6      JSR $9000
+00004010  4EB9 000F9000              7      JSR $000F9000
+00004016                             8  
+00004016                             9      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

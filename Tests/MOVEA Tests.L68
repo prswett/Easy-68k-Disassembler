@@ -1,0 +1,44 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:31:01
+
+00004000                             1      ORG     $4000
+00004000                             2  
+00004000  3240                       3      MOVEA.W D0,A1
+00004002  2440                       4      MOVEA.L D0,A2
+00004004  364A                       5      MOVEA.W A2,A3
+00004006  284A                       6      MOVEA.L A2,A4
+00004008  3A5A                       7      MOVEA.W (A2)+,A5
+0000400A  2C5A                       8      MOVEA.L (A2)+,A6
+0000400C  3262                       9      MOVEA.W -(A2),A1
+0000400E  2262                      10      MOVEA.L -(A2),A1
+00004010                            11  
+00004010  3278 0002                 12      MOVEA.W $0002,A1
+00004014  3278 5002                 13      MOVEA.W $5002,A1
+00004018  3279 00009004             14      MOVEA.W $9004,A1
+0000401E  3279 0000FFFF             15      MOVEA.W $FFFF,A1
+00004024                            16  
+00004024  3278 0002                 17      MOVEA.W $00000002,A1
+00004028  3278 5002                 18      MOVEA.W $00005002,A1
+0000402C  3279 00009004             19      MOVEA.W $00009004,A1
+00004032  3279 0000FFFF             20      MOVEA.W $0000FFFF,A1
+00004038                            21  
+00004038  2278 0002                 22      MOVEA.L $0002,A1
+0000403C  2278 5002                 23      MOVEA.L $5002,A1
+00004040  2279 00009004             24      MOVEA.L $9004,A1
+00004046  2279 0000FFFF             25      MOVEA.L $FFFF,A1
+0000404C                            26  
+0000404C  2278 0002                 27      MOVEA.L $00000002,A1
+00004050  2278 5002                 28      MOVEA.L $00005002,A1
+00004054  2279 00009004             29      MOVEA.L $00009004,A1
+0000405A  2279 0000FFFF             30      MOVEA.L $0000FFFF,A1
+00004060                            31  
+00004060                            32      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

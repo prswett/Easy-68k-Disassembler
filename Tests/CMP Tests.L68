@@ -1,0 +1,26 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:22:43
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  B200                       3      CMP.B   D0,D1
+00004002  B249                       4      CMP.W   A1,D1
+00004004  B292                       5      CMP.L   (A2),D1
+00004006  B45B                       6      CMP.W   (A3)+,D2
+00004008  B464                       7      CMP.W   -(A4),D2
+0000400A  B6B8 1234                  8      CMP.L   $1234,D3
+0000400E  B6B9 000A1234              9      CMP.L   $000A1234,D3
+00004014  B83C 001A                 10      CMP.B   #$1A,D4
+00004018  B87C 1A1A                 11      CMP.W   #$1A1A,D4
+0000401C  B8BC 1F1A1F1A             12      CMP.L   #$1F1A1F1A,D4
+00004022                            13  
+00004022                            14      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------

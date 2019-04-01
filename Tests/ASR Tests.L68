@@ -1,0 +1,35 @@
+00004000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 5/30/2018 20:14:09
+
+00004000                             1      ORG    $4000
+00004000                             2  
+00004000  E404                       3      ASR.B #$02,D4
+00004002                             4  
+00004002  E0D1                       5      ASR.W (A1)
+00004004  E0E1                       6      ASR.W -(A1)
+00004006  E0D9                       7      ASR.W (A1)+
+00004008  E0F8 4002                  8      ASR.W $4002
+0000400C  E0F8 4002                  9      ASR.W $00004002
+00004010  E0F9 00009000             10      ASR.W $9000
+00004016  E0F9 00009000             11      ASR.W $00009000
+0000401C  E444                      12      ASR.W #$02,D4
+0000401E  E444                      13      ASR.W #$0002,D4
+00004020                            14  
+00004020  E484                      15      ASR.L #$02,D4
+00004022  E484                      16      ASR.L #$0002,D4
+00004024  E484                      17      ASR.L #$00000002,D4
+00004026                            18  
+00004026  E624                      19      ASR.B D3,D4
+00004028  E664                      20      ASR.W D3,D4
+0000402A  E6A4                      21      ASR.L D3,D4
+0000402C                            22  
+0000402C                            23      END    $4000
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
